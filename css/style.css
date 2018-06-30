@@ -20,6 +20,7 @@
 
 }
 h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
     letter-spacing: .16em;
 }
 h1, h2, h3, h4, h5, h6,
@@ -107,6 +108,7 @@ a {
 
 .section {
     width: 100%;
+    display: flex;
 }
 
 .section__block {
@@ -157,3 +159,22 @@ a {
 .section__block :last-child {
     margin-bottom: 0;
 }
+
+/*services*/
+.section__services {
+    background-image: url(../img/services.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.section__block--services {
+    border-color: #ffffff;
+}
+
+.section__block--services ::before,
+.section__block--services ::after {
+    background-color: #ffffff;
+}
+
