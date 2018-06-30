@@ -19,13 +19,16 @@
     font-style: normal;
 
 }
-
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: .16em;
+}
 h1, h2, h3, h4, h5, h6,
 p,
 a {
     margin: 0;
 }
 
+/*header*/
 .header {
     min-width: 100%;
     padding: 280px 0 110px;
@@ -50,16 +53,17 @@ a {
     margin: 0 auto 90px;
 }
 
-
 .logo:hover .cls-1, 
 .logo:hover .cls-2,
 .logo:hover .cls-3 {
     fill-rule: evenodd;
     stroke: #00ff00;
 }
+
 .logo:hover .cls-2 {
     stroke: #00ff00;
 }
+
 .logo:hover .cls-3,
 .logo:hover .cls-4 {
     fill: #00ff00;
@@ -67,9 +71,8 @@ a {
 
 .header__title {
     margin-bottom: 40px;
-    font-family: 'lato bold', Arial, sans-serif;
+    font-family: 'lato bold', Arial, Sans-Serif;
     font-size: 54px;
-    letter-spacing: .16px;
 }
 
 .header__text {
@@ -91,37 +94,66 @@ a {
     stroke: #00ff00;
 }
 
+/*main*/
 
-
-
-/*
-body {
-    background-color: grey;
+.main {
+    width: 100%;
+    color: #3c3c3c;
+    text-align: center;
+    font-family: 'lato light', Arial, Sans-Serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.logo {
+.section {
+    width: 100%;
+}
+
+.section__block {
+    box-sizing: border-box;
+    position: relative;
+    width: 900px;
+    margin: 160px auto;
+    padding: 70px 170px 25px;
+    border: solid 2px #3c3c3c;
+    border-top: none;
+}
+
+.section__title {
     display: inline-block;
-    width: 67px;
-    height: 66px;
+    width: 420px;
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    margin-left: -210px;
+    font-family: 'lato bold', Arial, Sans-Serif;
+    font-size: 34px;
 }
 
-.logo:hover .cls-1, 
-.logo:hover .cls-2 {
-    fill: none;
-    stroke-width: 2px; 
+.section__title::before,
+.section__title::after {
+    content: '';
+    display: inline-block;
+    width: 240px;
+    height: 2px;
+    background-color: #3c3c3c;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px; 
 }
 
-.logo:hover .cls-1, 
-.logo:hover .cls-2,
-.logo:hover .cls-3 {
-    fill-rule: evenodd;
-    stroke: pink;
+.section__title::before {
+    left: -240px;
 }
-.logo:hover .cls-2 {
-    stroke: pink;
+
+.section__title::after {
+   right: -240px;
 }
-.logo:hover .cls-3,
-.logo:hover .cls-4 {
-    fill: pink;
+
+.section__block p {
+    margin-bottom: 25px;
 }
-*/
+
+.section__block :last-child {
+    margin-bottom: 0;
+}
