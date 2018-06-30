@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'lato light';
+    src: url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato regular';
+    src: url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato bold';
+    src: url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+a {
+    margin: 0;
+}
+
+.header {
+    min-width: 100%;
+    padding: 280px 0 110px;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 67px;
+    height: 70px;
+    margin: 0 auto 90px;
+}
+
+
+.logo:hover .cls-1, 
+.logo:hover .cls-2,
+.logo:hover .cls-3 {
+    fill-rule: evenodd;
+    stroke: #00ff00;
+}
+.logo:hover .cls-2 {
+    stroke: #00ff00;
+}
+.logo:hover .cls-3,
+.logo:hover .cls-4 {
+    fill: #00ff00;
+}
+
+.header__title {
+    margin-bottom: 40px;
+    font-family: 'lato bold', Arial, sans-serif;
+    font-size: 54px;
+    letter-spacing: .16px;
+}
+
+.header__text {
+    margin-bottom: 230px;
+    font-size: 15px;
+    letter-spacing: .06em;
+    line-height: 1.5;
+}
+
+.scroll {
+    display: block;
+    width: 23px;
+    height: 37px;
+    margin: 0 auto;
+}
+
+.scroll:hover .scroll-svg {
+    fill-rule: evenodd;
+    stroke: #00ff00;
+}
+
+
+
+
+/*
+body {
+    background-color: grey;
+}
+
+.logo {
+    display: inline-block;
+    width: 67px;
+    height: 66px;
+}
+
+.logo:hover .cls-1, 
+.logo:hover .cls-2 {
+    fill: none;
+    stroke-width: 2px; 
+}
+
+.logo:hover .cls-1, 
+.logo:hover .cls-2,
+.logo:hover .cls-3 {
+    fill-rule: evenodd;
+    stroke: pink;
+}
+.logo:hover .cls-2 {
+    stroke: pink;
+}
+.logo:hover .cls-3,
+.logo:hover .cls-4 {
+    fill: pink;
+}
+*/
