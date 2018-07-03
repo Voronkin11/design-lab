@@ -229,6 +229,7 @@ a {
     min-height: 237px;
     margin: 0 10px 10px 0;
     padding: 40px;
+    flex-wrap: wrap;
     align-items: flex-end;
     flex-grow: 0;
     background: #eeeeee;
